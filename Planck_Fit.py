@@ -113,7 +113,7 @@ for object_dir in object_dir_list:
     # R^2値のexcelファイル作成
     reshaped_r_squared = reversed(np.reshape(r_squared_list, [naxis2, naxis1]))
     df = pd.DataFrame(reshaped_r_squared)
-    df.to_excel(dir_path+'Fit_'+object_dir+'/R_Squared.xlsx',
+    df.to_excel(dir_path+'Fit_'+object_dir+'/r.xlsx',
                 encoding='utf-8', index=False, header=False)
 
     # dustの温度マップ作製
